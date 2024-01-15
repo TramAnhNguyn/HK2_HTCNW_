@@ -1,0 +1,28 @@
+.menu li{
+    float : left;
+    background-color: cadetblue;
+    width: 150px;
+    height: 50px;
+    list-style: none;
+    line-height: 50px;
+    position: relative;
+    text-indent: 15px;
+}
+li a{
+    background-color: none;
+}
+.menu li:hover{
+    background-color: blueviolet;
+}
+li:hover>a{ color: yellow; font-weight: bold;}
+.menu li .sub-menu{
+    display: none;
+    position: absolute;
+}
+.menu li:hover>.sub-menu{
+    display: block;
+}
+.menu li .sub-menu li :hover>.sub-menu{
+    top: 0px;
+    left: 150px;
+}
