@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiem tra tam giac</title>
+    
+</head>
+<body>
+    <h1>Kiem tra tam giac</h1>
+    <form action="/action_page.php">
+        <label for="a">Nhap a:</label><br>
+        <input type="number" id="a" name="a"><br>
+        <label for="b">Nhap b:</label><br>
+        <input type="number" id="b" name="b"><br>
+        <label for="c">Nhap c:</label><br>
+        <input type="number" id="c" name="c"><br><br>
+        <input type="submit" value="Tinh toan">
+      </form> 
+
+
+    <script language="javascript" type="text/javascript">
+        var a= eval(prompt("Nhap vao canh a:"));
+        var b= eval(prompt("Nhap vao canh b:"));
+        var c= eval(prompt("Nhap vao canh c:"));
+
+        if(a+b>c && a+c>b && b+c>a)
+            if(a == b && b == c && a==c)
+            {
+                document.writeln("Tam giac ABC deu");
+            }
+            else
+            if(a==b || a==c ||b==c)
+            {
+                document.writeln("Tam giac ABC can ")
+            }
+            else
+            {
+                document.writeln("Tam giac ABC thuong");
+            }
+        else
+        {
+            document.writeln("Khong phai la tam giac")
+        }
+    </script>
+    
+    
+    
+    
+      
+</body>
+</html>

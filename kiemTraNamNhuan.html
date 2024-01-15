@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Document</title>
+</head>
+<body>
+    <p>Nhập năm cần kiểm tra: 
+        <input type="text" id="nam">
+    </p>
+    <p>Kích chuột để thực hiện: <button onclick="kiemTraNamNhuan()">Kiểm tra</button></p>
+
+    <script>
+        function kiemTraNamNhuan() {
+            // Lấy giá trị năm từ ô input
+            var nam = document.getElementById("nam").value;
+
+            // Kiểm tra xem năm có phải là năm nhuận không
+            if ((nam % 4 == 0 && nam % 100 != 0) || nam % 400 == 0) {
+                alert(nam + " là năm nhuận.");
+            } else {
+                alert(nam + " không phải là năm nhuận.");
+            }
+        }
+    </script>
+</body>
+</html>
