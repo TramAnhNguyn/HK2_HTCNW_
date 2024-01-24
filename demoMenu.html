@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wrapper {
+            height: 800px;
+            width: 1089px;
+            background-color: rgb(192, 119, 170);
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        header h1 {
+            position: absolute;
+            color: rgb(45, 84, 156);
+            top: 30px;
+            left: 300px;
+        }
+        
+        header h2 {
+            position: absolute;
+            color: rgb(96, 49, 150);
+            top: 70px;
+            left: 400px;
+            text-shadow: rgb(231, 225, 200) 8px 5px 3px;
+        }
+        
+        nav {
+            position: relative;
+        }
+        
+        .menu li {
+            position: absolute;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(250, 177, 144);
+            list-style-type: none;
+            border: 2px solid bisque;
+            border-radius: 10px 10px 10px 10px;
+        }
+        
+        .menu li:nth-child(5) {
+            top: 20px;
+            right: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(4) {
+            top: 20px;
+            right: 210px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(3) {
+            top: 20px;
+            right: 370px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(2) {
+            top: 20px;
+            right: 530px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(1) {
+            top: 20px;
+            right: 690px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:hover {
+            background-color: rgb(83, 147, 207);
+        }
+        
+        li a {
+            font-weight: bold;
+            color: rgb(95, 61, 88);
+        }
+        
+        li:hover a {
+            font-weight: bold;
+            color: rgb(226, 214, 218);
+        }
+        
+        form #txtEmail {
+            width: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/pastel.png" alt="" srcset="" height="150px" width="1089px">
+            <h1>TRUONG DAI HOC CONG NGHIEP</h1>
+            <h2>KHOA CONG NGHE THONG TIN</h2>
+
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">TIN TUC</a></li>
+                <li><a href="#">KY THUAT</a></li>
+                <li><a href="#">DU AN</a></li>
+                <li><a href="#">NGANH</a></li>
+                <li><a href="#">HOI THAO</a>
+                    <form action="" method="post">
+                        <input type="email" name="txtEmail" id="txtEmail">
+                        <button type="submit">GO</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
